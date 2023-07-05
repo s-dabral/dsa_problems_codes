@@ -57,7 +57,8 @@ public:
 
 
 
-/*class Solution {
+/*
+class Solution {
 public:
     vector<int> inorderTraversal(TreeNode* root) {
         vector<int>ans;
@@ -90,3 +91,48 @@ public:
 
 
 
+
+
+
+//This is just the function of iterative approach of postorder traversal
+//To practice this question, please prefer to the leetcode link below:
+//https://leetcode.com/problems/binary-tree-postorder-traversal/
+
+
+/*
+
+class Solution {
+public:
+    vector<int> postorderTraversal(TreeNode* root) {
+        stack<TreeNode *>s1;
+        stack<TreeNode *>s2;
+        vector<int>ans;
+        if(root==NULL)
+        {
+            return ans;
+        }
+        s1.push(root);
+        while(!s1.empty())
+        {
+            root=s1.top();
+            s1.pop();
+            s2.push(root);
+            if(root->left!=NULL)
+            {
+                s1.push(root->left);
+            }
+            if(root->right!=NULL)
+            {
+                s1.push(root->right);
+            }
+        }
+        while(!s2.empty())
+        {
+            ans.push_back(s2.top()->val);
+            s2.pop();
+        }
+        return ans;
+    }
+};
+
+*/
