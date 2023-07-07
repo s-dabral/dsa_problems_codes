@@ -2,6 +2,51 @@
 #include<bits/stdc++.h>
 using namespace std;
 
+
+
+//Bubble Sort
+
+
+
+//Insertion Sort
+
+
+
+
+
+//Selection Sort
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//Merge Sort
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//Quick Sort
+
+
 class Solution
 {
     public:
@@ -30,3 +75,49 @@ class Solution
        return i+1;
     }
 };
+
+
+
+
+//Randomised Quick Sort
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//Radix Sort
+
+
+
+
+
+
+
+
+
+
+
+//Bucket Sort
+
+
+
+
+
+
+
+
+
+
+
+
+
